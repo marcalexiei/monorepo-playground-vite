@@ -9,8 +9,9 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "build:dev": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 0",
-       "format": "biome format --write src ./*.json",
+    "format": "biome format --write src ./*.json",
     "format:check": "biome format src ./*.json"
   },
   "repository": {
