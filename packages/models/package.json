@@ -1,0 +1,26 @@
+{
+  "name": "@monorepoplayground/models",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 0",
+       "format": "biome format --write src ./*.json",
+    "format:check": "biome format src ./*.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcalexiei/monorepo-playground.git"
+  },
+  "author": "Marco Pasqualetti <marco.pasqualetti@live.com>",
+
+
+
+
+  "license": "MIT"
+}

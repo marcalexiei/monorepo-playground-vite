@@ -1,0 +1,31 @@
+{
+  "name": "monorepo-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build -workspaces",
+    "test": "npm run test -workspaces",
+    "format": "biome format --write ./*.json && npm run format -workspaces",
+    "format:check": "biome format ./*.json && npm run format:check -workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcalexiei/monorepo-playground.git"
+  },
+  "author": "Marco Pasqualetti <marco.pasqualetti@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcalexiei/monorepo-playground/issues"
+  },
+  "homepage": "https://github.com/marcalexiei/monorepo-playground#readme",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "1.5.1",
+    "typescript": "5.3.3"
+  }
+}
